@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import styles from './MapDrilling.module.css'
 
 const menu = [
@@ -68,17 +69,37 @@ const menu = [
 ]
 
 export const MapDrilling = () => {
+  const [isOpen, setIsOpen] = useState(true)
+  const handleClick = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <>
       <h1>{`</MapDrilling>`}</h1>
       {menu.map(({ id, title, subMenu }) => (
-        <div className={styles.menu} key={id}>
+        <div
+          className={styles.menu}
+          onClick={handleClick}
+          key={id}
+          style={{
+            cursor: 'pointer',
+          }}
+        >
           <span>{title}</span>
           {subMenu.map(({ id, title, routes }) => (
-            <div className={styles['sub-menu']} key={id}>
+            <div
+              className={styles['sub-menu']}
+              key={id}
+              style={{ color: 'green', display: isOpen ? 'flex' : 'none' }}
+            >
               <span>{title}</span>
               {routes.map(({ id, title }) => (
-                <div className={styles.routes} key={id}>
+                <div
+                  className={styles.routes}
+                  key={id}
+                  style={{ color: 'yellow' }}
+                >
                   <span>{title}</span>
                 </div>
               ))}

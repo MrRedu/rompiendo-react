@@ -1,6 +1,7 @@
 import propTypes from 'prop-types'
 
 import styles from './MapDrillingSeparate.module.css'
+import { useState } from 'react'
 
 const menu = [
   {
@@ -101,12 +102,18 @@ const menu = [
   },
 ]
 
-const Menu = ({ title, children }) => {
+const Menu = ({ title, isOpen, onClick, children }) => {
   return (
     <>
-      <div className={styles.menu}>
+      <div onClick={onClick} className={styles.menu}>
         <span>{title}</span>
-        {children}
+        <div
+          className={`${styles['menu-children']} ${
+            isOpen ? styles['is-open'] : ''
+          }`}
+        >
+          {children}
+        </div>
       </div>
     </>
   )
@@ -134,11 +141,22 @@ const Route = ({ title }) => {
 }
 
 export const MapDrillingSeparate = () => {
+  const [openMenuId, setOpenMenuId] = useState(null)
+
+  const handleOnClickMenu = menuId => {
+    setOpenMenuId(prev => (prev === menuId ? null : menuId))
+  }
+
   return (
     <>
       <h1>{`</MapDrillingSeparate>`}</h1>
       {menu.map(({ id, title, subMenu }) => (
-        <Menu key={id} title={title}>
+        <Menu
+          key={id}
+          title={title}
+          isOpen={openMenuId === id}
+          onClick={() => handleOnClickMenu(id)}
+        >
           {subMenu.map(({ id, title, routes }) => (
             <SubMenu key={id} title={title}>
               {routes.map(({ id, title }) => (
@@ -161,6 +179,8 @@ MapDrillingSeparate.propTypes = {
 
 Menu.propTypes = {
   title: propTypes.string,
+  isOpen: propTypes.bool,
+  onClick: propTypes.func,
   children: propTypes.array,
 }
 
