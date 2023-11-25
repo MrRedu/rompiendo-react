@@ -104,7 +104,7 @@ const menu = [
 const Menu = ({ title, children }) => {
   return (
     <>
-      <div onClick={handleClick} className={styles.menu}>
+      <div className={styles.menu}>
         <span>{title}</span>
         {children}
       </div>
