@@ -22,16 +22,23 @@
   --f-bold: 700;
 
   /* Colors */
-  --c-whywhite-300: #F7F7F7;
+  --c-whywhite: #e3e3e3;
+
+  --c-neutral-900: #060606;
 
   --c-gray-500: #828282;
   --c-gray-300: #BDBDBD;
 }
 
 body {
-  background-color: #1C1C1C;
-  color: #F7F7F7;
-  font-family: -apple-system, system-ui, sans-serif;
+  background-image: url('/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--c-neutral-900);
+
+  color: var(--c-whywhite);
+  font-family: system-ui, sans-serif;
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 8px;
