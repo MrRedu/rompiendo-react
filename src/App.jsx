@@ -1,5 +1,6 @@
 // import { MapDrilling } from './components/map-drilling/MapDrilling'
-import { MapDrillingSeparate } from './components/map-drilling/separate/MapDrillingSeparate'
+// import { MapDrillingSeparate } from './components/map-drilling/separate/MapDrillingSeparate'
+import { ToDoList } from './components/todo-list/ToDoList'
 
 export const App = () => {
   return (
@@ -7,7 +8,8 @@ export const App = () => {
       <h1>{`</App>`}</h1>
       <hr />
       {/* <MapDrilling /> */}
-      <MapDrillingSeparate />
+      {/* <MapDrillingSeparate /> */}
+      <ToDoList />
     </>
   )
 }
