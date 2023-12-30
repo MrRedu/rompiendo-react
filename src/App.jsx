@@ -2,8 +2,9 @@
 // import { MapDrillingSeparate } from './components/map-drilling/separate/MapDrillingSeparate'
 // import { ToDoList } from './components/todo-list/ToDoList'
 // import { ContextApp } from './components/context/ContextApp'
+// import { LocalStorage } from './components/local-storage/LocalStorage'
 
-import { LocalStorage } from './components/local-storage/LocalStorage'
+import { CobeComponent } from './components/cobe/CobeComponent'
 
 export const App = () => {
   return (
@@ -14,7 +15,8 @@ export const App = () => {
       {/* <MapDrillingSeparate /> */}
       {/* <ToDoList /> */}
       {/* <ContextApp /> */}
-      <LocalStorage />
+      {/* <LocalStorage /> */}
+      <CobeComponent />
     </>
   )
 }
