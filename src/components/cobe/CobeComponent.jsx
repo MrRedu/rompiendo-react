@@ -120,7 +120,7 @@ export const CobeComponent = () => {
             focusRef.current = locationToAngles(10.23535, -67.59113)
           }}
         >
-          ⬆ Maracay
+          📍 Maracay
         </button>
       </div>
     </div>
