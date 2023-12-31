@@ -18,7 +18,14 @@ export const App = () => {
       {/* <ContextApp /> */}
       {/* <LocalStorage /> */}
       {/* <CobeComponent /> */}
-      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+      <div
+        style={{
+          display: 'flex',
+          gap: '1rem',
+          flexWrap: 'wrap',
+          marginTop: '10rem',
+        }}
+      >
         <CardSpotlight>💪🏻</CardSpotlight>
         <CardSpotlight>⭐</CardSpotlight>
         <CardSpotlight>🍳</CardSpotlight>
