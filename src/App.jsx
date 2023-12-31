@@ -18,13 +18,14 @@ export const App = () => {
       {/* <ContextApp /> */}
       {/* <LocalStorage /> */}
       {/* <CobeComponent /> */}
-      <CardSpotlight>
-        <div
-          style={{ minHeight: '450px', display: 'flex', alignItems: 'center' }}
-        >
-          TEXTO
-        </div>
-      </CardSpotlight>
+      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+        <CardSpotlight>💪🏻</CardSpotlight>
+        <CardSpotlight>⭐</CardSpotlight>
+        <CardSpotlight>🍳</CardSpotlight>
+        <CardSpotlight>📸</CardSpotlight>
+        <CardSpotlight>🚧</CardSpotlight>
+        <CardSpotlight>👕</CardSpotlight>
+      </div>
     </>
   )
 }
