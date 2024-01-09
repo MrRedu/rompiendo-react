@@ -2,10 +2,10 @@
 // import { MapDrillingSeparate } from './components/map-drilling/separate/MapDrillingSeparate'
 // import { ToDoList } from './components/todo-list/ToDoList'
 // import { ContextApp } from './components/context/ContextApp'
-// import { LocalStorage } from './components/local-storage/LocalStorage'
+import { LocalStorage } from './components/local-storage/LocalStorage'
 // import { CobeComponent } from './components/cobe/CobeComponent'
-
-import { CardSpotlight } from './components/card-spotlight/CardSpotlight'
+// import { CardSpotlight } from './components/card-spotlight/CardSpotlight'
+// import { ReactSelectSearch } from "./components/react-select-search/ReactSelectSearch"
 
 export const App = () => {
   return (
@@ -16,9 +16,9 @@ export const App = () => {
       {/* <MapDrillingSeparate /> */}
       {/* <ToDoList /> */}
       {/* <ContextApp /> */}
-      {/* <LocalStorage /> */}
+      <LocalStorage />
       {/* <CobeComponent /> */}
-      <div
+      {/* <div
         style={{
           display: 'flex',
           gap: '1rem',
@@ -32,7 +32,8 @@ export const App = () => {
         <CardSpotlight>📸</CardSpotlight>
         <CardSpotlight>🚧</CardSpotlight>
         <CardSpotlight>👕</CardSpotlight>
-      </div>
+      </div> */}
+      {/* <ReactSelectSearch /> */}
     </>
   )
 }
