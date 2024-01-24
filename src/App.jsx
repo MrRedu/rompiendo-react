@@ -2,10 +2,12 @@
 // import { MapDrillingSeparate } from './components/map-drilling/separate/MapDrillingSeparate'
 // import { ToDoList } from './components/todo-list/ToDoList'
 // import { ContextApp } from './components/context/ContextApp'
-import { LocalStorage } from './components/local-storage/LocalStorage'
+// import { LocalStorage } from './components/local-storage/LocalStorage'
 // import { CobeComponent } from './components/cobe/CobeComponent'
 // import { CardSpotlight } from './components/card-spotlight/CardSpotlight'
 // import { ReactSelectSearch } from "./components/react-select-search/ReactSelectSearch"
+
+import { InfiniteScrollBanner } from './components/infinite-scroll-animation/InfiniteScrollBanner'
 
 export const App = () => {
   return (
@@ -16,7 +18,7 @@ export const App = () => {
       {/* <MapDrillingSeparate /> */}
       {/* <ToDoList /> */}
       {/* <ContextApp /> */}
-      <LocalStorage />
+      {/* <LocalStorage /> */}
       {/* <CobeComponent /> */}
       {/* <div
         style={{
@@ -34,6 +36,8 @@ export const App = () => {
         <CardSpotlight>👕</CardSpotlight>
       </div> */}
       {/* <ReactSelectSearch /> */}
+      <InfiniteScrollBanner direction="left" speed="fast" />
+      <InfiniteScrollBanner direction="right" speed="slow" />
     </>
   )
 }
