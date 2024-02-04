@@ -7,8 +7,9 @@
 // import { CardSpotlight } from './components/card-spotlight/CardSpotlight'
 // import { ReactSelectSearch } from "./components/react-select-search/ReactSelectSearch"
 // import { InfiniteScrollBanner } from './components/infinite-scroll-animation/InfiniteScrollBanner'
+// import { TestSpline } from './components/3d/test-1/TestSpline'
 
-import { TestSpline } from './components/3d/test-1/TestSpline'
+import { WeatherApp } from './components/weather-app/WeatherApp'
 
 export const App = () => {
   return (
@@ -39,7 +40,8 @@ export const App = () => {
       {/* <ReactSelectSearch /> */}
       {/* <InfiniteScrollBanner direction="left" speed="fast" /> */}
       {/* <InfiniteScrollBanner direction="right" speed="slow" /> */}
-      <TestSpline />
+      {/* <TestSpline /> */}
+      <WeatherApp />
     </>
   )
 }
