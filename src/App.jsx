@@ -6,8 +6,9 @@
 // import { CobeComponent } from './components/cobe/CobeComponent'
 // import { CardSpotlight } from './components/card-spotlight/CardSpotlight'
 // import { ReactSelectSearch } from "./components/react-select-search/ReactSelectSearch"
+// import { InfiniteScrollBanner } from './components/infinite-scroll-animation/InfiniteScrollBanner'
 
-import { InfiniteScrollBanner } from './components/infinite-scroll-animation/InfiniteScrollBanner'
+import { TestSpline } from './components/3d/test-1/TestSpline'
 
 export const App = () => {
   return (
@@ -36,8 +37,9 @@ export const App = () => {
         <CardSpotlight>👕</CardSpotlight>
       </div> */}
       {/* <ReactSelectSearch /> */}
-      <InfiniteScrollBanner direction="left" speed="fast" />
-      <InfiniteScrollBanner direction="right" speed="slow" />
+      {/* <InfiniteScrollBanner direction="left" speed="fast" /> */}
+      {/* <InfiniteScrollBanner direction="right" speed="slow" /> */}
+      <TestSpline />
     </>
   )
 }

@@ -40,6 +40,7 @@ body {
   color: var(--c-whywhite);
   font-family: system-ui, sans-serif;
   max-width: 1080px;
+  min-height: 100dvh;
   margin: 0 auto;
   padding: 0 8px;
 }
