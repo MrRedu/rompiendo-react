@@ -9,8 +9,9 @@
 // import { InfiniteScrollBanner } from './components/infinite-scroll-animation/InfiniteScrollBanner'
 // import { TestSpline } from './components/3d/test-1/TestSpline'
 // import { WeatherApp } from './components/weather-app/WeatherApp'
+// import { StateInMultipleCheckBoxes } from './components/stateInMultipleCheckBoxes/StateInMultipleCheckBoxes'
 
-import { StateInMultipleCheckBoxes } from './components/stateInMultipleCheckBoxes/StateInMultipleCheckBoxes'
+import { EditableTask } from './components/editable-task/EditableTask'
 
 export const App = () => {
   return (
@@ -43,7 +44,8 @@ export const App = () => {
       {/* <InfiniteScrollBanner direction="right" speed="slow" /> */}
       {/* <TestSpline /> */}
       {/* <WeatherApp /> */}
-      <StateInMultipleCheckBoxes />
+      {/* <StateInMultipleCheckBoxes /> */}
+      <EditableTask />
     </>
   )
 }
