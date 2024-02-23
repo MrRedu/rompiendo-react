@@ -54,8 +54,8 @@ export const CardSpotlight = ({ children }) => {
           background: `
           radial-gradient(600px circle at 
             ${position.x}px ${position.y}px, 
-            rgba(97, 97, 97, 0.1), 
-            transparent 40%)
+            rgba(60, 60, 60, 0.2), 
+            transparent 30%)
             `,
         }}
       />

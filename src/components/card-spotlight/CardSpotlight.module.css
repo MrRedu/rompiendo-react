@@ -4,14 +4,23 @@
     justify-content: center;
     border: 1px solid #222222;
     border-radius: 12px;
-    background-color: #121212;
+    background-color: #12121220;
+    backdrop-filter: blur(5px);
 
-    width: 160px;
+    width: 300px;
     min-height: 200px;
 
 
     position: relative;
     overflow: hidden;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.container:hover {
+    background-color: #12121280;
+    border: 1px solid #404040;
+    box-shadow: 0 0 10px rgba(12, 12, 12, 0.6), 0 0 20px rgba(16, 16, 16, 0.6), 0 0 30px rgba(19, 19, 19, 0.6);
 }
 
 .spotlight {
