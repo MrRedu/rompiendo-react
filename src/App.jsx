@@ -8,8 +8,10 @@
 // import { ReactSelectSearch } from "./components/react-select-search/ReactSelectSearch"
 // import { InfiniteScrollBanner } from './components/infinite-scroll-animation/InfiniteScrollBanner'
 // import { TestSpline } from './components/3d/test-1/TestSpline'
-import { WeatherApp } from './components/weather-app/WeatherApp'
+// import { WeatherApp } from './components/weather-app/WeatherApp'
 // import { StateInMultipleCheckBoxes } from './components/stateInMultipleCheckBoxes/StateInMultipleCheckBoxes'
+
+import { ReactDataTable } from "./components/react-datatable/ReactDataTable"
 
 // import { EditableTask } from './components/editable-task/EditableTask'
 
@@ -43,9 +45,10 @@ export const App = () => {
       {/* <InfiniteScrollBanner direction="left" speed="fast" /> */}
       {/* <InfiniteScrollBanner direction="right" speed="slow" /> */}
       {/* <TestSpline /> */}
-      <WeatherApp />
+      {/* <WeatherApp /> */}
       {/* <StateInMultipleCheckBoxes /> */}
       {/* <EditableTask /> */}
+      <ReactDataTable />
     </>
   )
 }
