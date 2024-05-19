@@ -10,10 +10,11 @@
 // import { TestSpline } from './components/3d/test-1/TestSpline'
 // import { WeatherApp } from './components/weather-app/WeatherApp'
 // import { StateInMultipleCheckBoxes } from './components/stateInMultipleCheckBoxes/StateInMultipleCheckBoxes'
-
-import { ReactDataTable } from "./components/react-datatable/ReactDataTable"
-
 // import { EditableTask } from './components/editable-task/EditableTask'
+// import { ReactDataTable } from './components/react-datatable/ReactDataTable'
+
+import { SideBar } from './components/side-bar/SideBar'
+import { MENU, USER } from './libs/const'
 
 export const App = () => {
   return (
@@ -48,7 +49,37 @@ export const App = () => {
       {/* <WeatherApp /> */}
       {/* <StateInMultipleCheckBoxes /> */}
       {/* <EditableTask /> */}
-      <ReactDataTable />
+      {/* <ReactDataTable /> */}
+
+      <SideBar>
+        <SideBar.Section title="Section 1">
+          <SideBar.List>
+            {MENU.map(item => (
+              <SideBar.ListItem
+                key={item.path}
+                path={item.path}
+                title={item.title}
+                icon={item.icon}
+              />
+            ))}
+          </SideBar.List>
+        </SideBar.Section>
+        <SideBar.Section title="Section 2">
+          <SideBar.List>
+            {MENU.map(item => (
+              <SideBar.ListItem
+                key={item.path}
+                path={item.path}
+                title={item.title}
+                icon={item.icon}
+              />
+            ))}
+          </SideBar.List>
+        </SideBar.Section>
+        <SideBar.Section>
+          <SideBar.User {...USER} />
+        </SideBar.Section>
+      </SideBar>
     </>
   )
 }
